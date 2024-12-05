@@ -6,7 +6,8 @@
     <title>RDV application</title>
     <link rel="stylesheet" href="/NewPortfolios/projets.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <script src="/NewPortfolios/javascript2.js"></script>
+  
+
 </head>
 <div id="navbar"></div>
 <script>
@@ -15,7 +16,13 @@
     .then(data => {
       document.getElementById("navbar").innerHTML = data;
     });
+    function navigateTo(page) {
+      const baseURL = window.location.origin;
+      window.location.href = `${baseURL}${page}`;
+    }
 </script>
+
+  
 <body>
     <header class="header">
         <h1>Gestion de rendez-vous médicaux</h1>
@@ -26,7 +33,7 @@
         <div class="card">
             <div class="card__video">
                 <video width="100%" height="auto" controls>
-                    <source src="/NewPortfolios/assets/appRDV‐ Réalisée avec Clipchamp (2).mp4" type="video/mp4">
+                    <source src="../assets/appRDV‐ Réalisée avec Clipchamp (2).mp4" type="video/mp4">
                     Votre navigateur ne prend pas en charge la lecture des vidéos.
                 </video>
             </div>
@@ -38,7 +45,7 @@
                 <h2 id="frenchTitle" class="card__title">Gestion des Rendez-vous Médicaux</h2>
                 <h2 id="englishTitle" class="card__title hidden">Medical Appointment Management</h2>
                 <a href="https://github.com/Salma-Jedidi/rdvProject" target="_blank" class="card__link">Lien GitHub</a>
-                <a href="/NewPortfolios/appMobileRDV.html" target="_blank" class="card__link">App Mobile</a>
+                <a href="/NewPortfolio/projects/appMobileRDV.html" target="_blank" class="card__link">App Mobile</a>
             </div>
         
             <!-- Right Column -->
@@ -189,9 +196,12 @@
 
     
       <!-- Bouton droit -->
-      <div class="arrow-button right" onclick="navigateTo('/NewPortfolios/house.html')">
+      <div class="arrow-button right" onclick="navigateTo('/NewPortfolio/projects/house.html')">
         <i class="fa-solid fa-arrow-right"></i>
       </div>
+      
+      
+      
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const translateLink = document.getElementById('translateLink');

@@ -7,7 +7,7 @@
     <title>Molecule Design</title>
     <link rel="stylesheet" href="projets.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <script src="/javascript2.js"></script>
+
  
 </head>
 <div id="navbar"></div>
@@ -17,6 +17,10 @@
     .then(data => {
       document.getElementById("navbar").innerHTML = data;
     });
+    function navigateTo(page) {
+      const baseURL = window.location.origin;
+      window.location.href = `${baseURL}${page}`;
+    }
 </script>
 <body>
     <header class="header">
@@ -28,7 +32,7 @@
         <div class="card">
             <div class="card__video">
               <video width="100%" height="auto" controls>
-                <source src="/assets/molAiV.mp4" type="video/mp4">
+                <source src="../assets/molAiV.mp4" type="video/mp4">
                 Votre navigateur ne prend pas en charge la lecture des vidéos.
             </video>
                </div>
@@ -58,12 +62,12 @@
           </div>
       </div>
     </main>
-    <div class="arrow-button left" onclick="navigateTo('yoga.html')">
+    <div class="arrow-button left" onclick="navigateTo('/NewPortfolio/projects/yoga.html')">
       <i class="fa-solid fa-arrow-left"></i>
     </div>
   
     <!-- Bouton droit -->
-    <div class="arrow-button right" onclick="navigateTo('tm.html')">
+    <div class="arrow-button right" onclick="navigateTo('/NewPortfolio/projects/tm.html')">
       <i class="fa-solid fa-arrow-right"></i>
     </div>
     <div class="skill" style="height: 140vh;">

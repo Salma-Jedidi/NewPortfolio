@@ -6,7 +6,7 @@
     <title>RDV application</title>
     <link rel="stylesheet" href="projets.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <script src="/javascript2.js"></script>
+  
 </head>
 <div id="navbar"></div>
 <script>
@@ -15,6 +15,10 @@
     .then(data => {
       document.getElementById("navbar").innerHTML = data;
     });
+    function navigateTo(page) {
+      const baseURL = window.location.origin;
+      window.location.href = `${baseURL}${page}`;
+    }
 </script>
 <body>
     <header class="header">
@@ -26,7 +30,7 @@
         <div class="card" style="  align-items: center; display: flex; justify-content: center;" >
             <div class="card__video" style=" width:90%; text-align: center;  " >
                 <video width="90%" height="700px" controls  >
-                    <source src="/assets/appMobileRDV.mp4" type="video/mp4" >
+                    <source src="../assets/appMobileRDV.mp4" type="video/mp4" >
                     Votre navigateur ne prend pas en charge la lecture des vidéos.
                 </video>
             </div>
@@ -73,7 +77,7 @@
 
     
       <!-- Bouton droit -->
-      <div class="arrow-button right" onclick="navigateTo('house.html')">
+      <div class="arrow-button right" onclick="navigateTo('/NewPortfolio/projects/house.html')">
         <i class="fa-solid fa-arrow-right"></i>
       </div>
     <script>

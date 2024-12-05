@@ -5,7 +5,7 @@
 body {
  font-family: Times, "Times New Roman", Georgia, serif;
     background-color: #000000fc;
-    background-image: url("/assets/farzad.jpg");
+    background-image: url("../assets/farzad.jpg");
     background-size: cover; /* Adapte l'image pour couvrir toute la zone sans distorsion */
     background-position: center; /* Centre l'image pour qu'elle soit bien placée */
     background-repeat: no-repeat;
