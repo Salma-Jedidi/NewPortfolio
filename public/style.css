@@ -57,7 +57,7 @@ margin-right: auto;
   text-align: center;
   padding: 12px 12px;
   text-decoration: none;
-  font-size: 28px;
+  font-size: 26px;
   transition: all 0.3s linear;
   margin-top: 0px;
   margin-bottom: 50px;
@@ -682,11 +682,12 @@ button:active{
   }
   nav {
     display: flex;
-    flex-direction: column; /* Organise les éléments de navigation verticalement */
+    flex-direction: column; 
     align-items: center;
+    width: 100%;
   }
 
   .topmenu {
-    font-size: 18px; /* Réduit la taille de la police pour mobile */
+    font-size: 18px; 
   }
 }
