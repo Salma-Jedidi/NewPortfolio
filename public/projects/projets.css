@@ -418,11 +418,67 @@ height: 40px;
   color: white;
   border-radius: 4px;
 }
-/* Pour les écrans de moins de 768px (mobile) */
 @media (max-width: 768px) {
-  .some-class {
-    /* Modifications spécifiques pour mobile */
+  /* Réduire la taille des titres */
+  h1 {
+    font-size: 32px;
+  }
+  
+  h2 {
+    font-size: 28px;
+  }
+  
+  /* Réduire la taille des liens */
+  .topmenu {
+    font-size: 22px;
+  }
+
+  /* Réduire la taille des cartes */
+  .card {
+    width: 100%;  /* Faire en sorte que les cartes prennent toute la largeur */
+    margin: 10px 0;
+  }
+  
+  /* Réduire la taille de l'image de profil */
+  .profile_image {
+    width: 250px;
+    height: 250px;
+  }
+
+  /* Adapter les marges */
+  .card__left, .card__right {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .card__description {
+    font-size: 1rem; /* Réduire la taille du texte */
+    line-height: 1.4;
+  }
+
+  /* Modifications de la barre de navigation */
+  nav {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* Ajuster la taille du bouton d'arrow */
+  .arrow-button {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  /* Réduire la taille du bouton de changement de langue */
+  #translateLink, #translateLinkEn {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  /* Adaptation des éléments de footer */
+  .footer {
     font-size: 14px;
     padding: 10px;
   }
 }
+

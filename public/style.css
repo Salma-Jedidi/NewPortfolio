@@ -655,11 +655,38 @@ button:active{
   margin-bottom: 0px;  
  
 }
-/* Pour les écrans de moins de 768px (mobile) */
 @media (max-width: 768px) {
-  .some-class {
-    /* Modifications spécifiques pour mobile */
-    font-size: 14px;
-    padding: 10px;
+  /* Pour les cartes */
+  .portfolio-container {
+    justify-content: center; /* Centre les cartes sur petits écrans */
+  }
+
+  .project-card {
+    width: 100%; /* Les cartes prennent toute la largeur sur petits écrans */
+  }
+
+  /* Adjustez d'autres éléments ici selon le besoin */
+  h2 {
+    font-size: 30px; /* Exemple de réduction de taille de texte */
+  }
+
+  .profile_image {
+    width: 200px; /* Réduit la taille de l'image pour s'adapter aux petits écrans */
+    height: 200px;
+  }
+
+  /* Vous pouvez aussi ajuster la taille des autres éléments comme les boutons, textes, etc. */
+  button {
+    width: 80%;
+    font-size: 16px;
+  }
+  nav {
+    display: flex;
+    flex-direction: column; /* Organise les éléments de navigation verticalement */
+    align-items: center;
+  }
+
+  .topmenu {
+    font-size: 18px; /* Réduit la taille de la police pour mobile */
   }
 }

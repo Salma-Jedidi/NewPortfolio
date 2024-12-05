@@ -605,4 +605,59 @@ ul.skills li.more input:checked + label:hover {
   .fade-in {
 	opacity: 1;
   }
+  @media only screen and (max-width: 768px) {
+	/* Contenu principal */
+	.content {
+	  width: 95vw;  /* Maximiser la largeur */
+	  height: 100vh;
+	  margin-top: 50px;  /* Ajuster la marge supérieure */
+	  margin-left: 10px;
+	  margin-right: 10px;
+	}
+  
+	/* Compétences */
+	.profile-skills {
+	  flex-direction: column;  /* Passer en colonne */
+	  margin-top: 5vh;
+	}
+  
+	.profile-skills > div {
+	  width: 90%;  /* Largeur plus grande pour chaque div */
+	  margin-bottom: 15px;
+	}
+  
+	/* Textes dans les compétences */
+	ul.skills li {
+	  font-size: 14px;  /* Réduire la taille du texte */
+	  padding: 15px 20px;
+	}
+  
+	ul.skills:before {
+	  font-size: 22px;
+	}
+  
+	ul.skills li span {
+	  font-size: 12px;
+	}
+  
+	/* Labels des compétences */
+	.profile-skills label {
+	  width: 45px;
+	  height: 45px;
+	  font-size: 18px;
+	}
+  
+	.profile-skills label:before {
+	  border-color: var(--b2);
+	}
+  
+	/* Ajuster les marges et les espacements */
+	.content {
+	  margin-top: 20px;
+	}
+  
+	.profile-skills > div {
+	  margin-right: 0;
+	}
+  }
   
