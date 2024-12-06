@@ -222,7 +222,14 @@ h2 {
   box-shadow: 0 3px 10px gray;
   box-sizing: border-box;
 }
-
+.responsive-object{
+  width:100% ;
+  height:100%;
+}
+.responsive-pdf {
+  width:150% ;
+  height:100%;
+}
 .skills h6 {
   font-size: 20px;
   margin-block-start: 8px;
@@ -641,21 +648,29 @@ button:active{
     background-attachment: fixed;
     margin: 0 auto;
   }
-
+  .responsive-pdf {
+    height: 80vh; 
+    border: none;
+    width: 150%;
+  }
   .project-container {
     width: 190%; /* Utilise toute la largeur disponible */
     padding: 10px; /* Réduit le padding pour économiser de l'espace */
     margin-top: 20px;
     align-items: center;
   }
+  .container{
+    width: 100%;
+  
+  }
   .footer {
     width:197%;
     margin-left:-7px;
   }
   nav {
-    height: 120px; /* Réduction de la hauteur */
+    height: 150px; /* Réduction de la hauteur */
     padding: 5px 10px;
-    width:199%;
+    width:200%;
     margin-left: -20px;
    
   }
@@ -665,7 +680,7 @@ button:active{
     padding: 20px 15px; 
     height: auto; /* Ajuste automatiquement la hauteur */
     margin: 0 auto;
-    margin-top: -15px;
+    margin-top: 0px;
   }
 
   .topmenu {
