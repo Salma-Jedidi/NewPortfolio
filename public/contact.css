@@ -194,7 +194,11 @@
     }
     .direct-contact-container, .form-horizontal {
       margin: 0 auto;
-    }  
+    } 
+    .social-media-list li {
+      margin-left: 2px;
+
+    } 
   }
   
   @media screen and (max-width: 569px) {
