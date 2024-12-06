@@ -95,18 +95,15 @@ margin-right: auto;
 .topdiv {
   float: right;
   padding-right: 1cm;
-  
 }
 
 .profile_name {
-    color:antiquewhite;
-    font-size: 35px;
+  color:antiquewhite;
+  font-size: 35px;
   float: left;
   padding-left: 1cm;
   margin-top: -40px;
-  margin-bottom: 20px;
-
-  
+  margin-bottom: 20px; 
 }
 
 .profile_name .contact_info {
@@ -339,8 +336,6 @@ border-radius: 4px;
 .card__side--back .card__heading-span {
   font-size: 1.8rem;
   font-weight: bold;
- 
-
 }
 
 .card__side--back .card__details {
@@ -412,18 +407,6 @@ border-radius: 4px;
 .card:hover .card__side--back {
   transform: rotateY(0deg);
 }
-
-/* Responsive design */
-@media (max-width: 768px) {
-  .card {
-    height: auto;
-  }
-
-  .card__side--front, .card__side--back {
-    padding: 20px;
-  }
-}
-
 /* Effet de flip des cartes */
 .card__side {
   position: absolute;
@@ -460,16 +443,7 @@ border-radius: 4px;
   transform: rotateY(0deg); /* Affiche la face arrière */
 }
 
-/* Responsive design pour petits écrans */
-@media (max-width: 768px) {
-  .portfolio-container {
-    justify-content: center; /* Centre les cartes sur petits écrans */
-  }
 
-  .project-card {
-    width: 100%; /* Les cartes prennent toute la largeur sur petits écrans */
-  }
-}
 
 
 /* Icon Button Style */
@@ -655,39 +629,197 @@ button:active{
   margin-bottom: 0px;  
  
 }
-@media (max-width: 768px) {
-  /* Pour les cartes */
-  .portfolio-container {
-    justify-content: center; /* Centre les cartes sur petits écrans */
+/* Responsive design pour petits écrans */
+
+@media screen and (max-width: 768px) {
+  body {
+    background-attachment: scroll; /* Optimise le défilement sur mobile */
+    padding: 0 10px; /* Ajoute des marges internes */
+    background-size: cover;
+    background-position: center; /* Centre l'image pour qu'elle soit bien placée */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0 auto;
   }
 
-  .project-card {
-    width: 100%; /* Les cartes prennent toute la largeur sur petits écrans */
+  .project-container {
+    width: 190%; /* Utilise toute la largeur disponible */
+    padding: 10px; /* Réduit le padding pour économiser de l'espace */
+    margin-top: 20px;
+    align-items: center;
   }
-
-  /* Adjustez d'autres éléments ici selon le besoin */
-  h2 {
-    font-size: 30px; /* Exemple de réduction de taille de texte */
-  }
-
-  .profile_image {
-    width: 200px; /* Réduit la taille de l'image pour s'adapter aux petits écrans */
-    height: 200px;
-  }
-
-  /* Vous pouvez aussi ajuster la taille des autres éléments comme les boutons, textes, etc. */
-  button {
-    width: 80%;
-    font-size: 16px;
+  .footer {
+    width:197%;
+    margin-left:-7px;
   }
   nav {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    width: 100%;
+    height: 120px; /* Réduction de la hauteur */
+    padding: 5px 10px;
+    width:199%;
+    margin-left: -20px;
+   
+  }
+
+  #home {
+    text-align: center;
+    padding: 20px 15px; 
+    height: auto; /* Ajuste automatiquement la hauteur */
+    margin: 0 auto;
+    margin-top: -15px;
   }
 
   .topmenu {
-    font-size: 18px; 
+    font-size: 18px; /* Réduit la taille des polices pour les menus */
+    padding: 4px;
+   
   }
+
+  .profile_name {
+    padding-left: 0;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  .introduction {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  .profile_image {
+    width: 150px; /* Réduit la taille de l'image de profil */
+    height: 150px;
+    margin-top: 20px;
+  }
+  .contact_info {
+    font-size: 18px;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-left:40px;
+  }
+  .background-image {
+    filter: brightness(50%); /* Rend l'image de fond plus sombre */
+  }
+  h1.word {
+    position: center;
+    text-align: center;
+    margin-left:20vh;
+  }
+
+  .text-overlay {
+    position: relative;
+    z-index: 10;
+    color: white; /* Contraste avec l'image de fond */
+    font-size: 22px;
+    margin-top: 20px;
+  }
+
+  h2 {
+    font-size: 28px; /* Réduit la taille des titres */
+    margin: 10px 0;
+  }
+
+
+  button {
+    margin-left:25vh;
+  }
+  .about-me {
+    flex-direction: column; /* Empile les éléments verticalement */
+    text-align: center;
+  }
+
+  #about-me h1 {
+    font-size: 40px; /* Réduit la taille des titres */
+    margin-top: 20px;
+  }
+
+  #about-me p {
+    font-size: 18px; /* Réduit la taille des paragraphes */
+    margin: 10px;
+  }
+
+  .all_skills {
+    flex-direction: column; /* Affiche les compétences en colonne */
+    gap: 10px;
+  }
+
+  .skill {
+    width: auto; /* Utilise toute la largeur disponible */
+    height: auto; /* Ajuste automatiquement la hauteur */
+    padding: 10px;
+    margin: 20px 0;
+    margin-left:10px;
+
+  }
+
+  .portfolio-container {
+    align-items: center;
+    width:110%;
+    margin-right: 10px;
+  
+  }
+
+  .project-card {
+    width: 25%;
+    min-width: 200px;
+    height:75vh;
+
+  }
+
+  .card {
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    perspective: 1500px; 
+
+  }
+
+  .Pimage {
+    width: 80px; /* Réduit la taille des petites images */
+    height: 80px;
+  }
+
+  .topdiv {
+    float: none;
+    text-align: center; /* Recentre le contenu */
+    padding-right: 0;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .flag-icon {
+    width: 20px; /* Réduit la taille de l'icône */
+  }
+  .all_skills .skill embed {
+    height: 100%; /* Ajuste la hauteur du PDF sur mobile */
+  }
+  .card__side--back .card__heading{
+    margin-bottom: 24px;
+  }
+  .card__side--back .card__heading-span {
+    font-size: 1.2rem; 
+   
+    }
+
+  /* Réduire la taille de la police pour les éléments de texte dans la carte */
+  .card__side--back .card__details li {
+    font-size: 1rem;  
+    padding: 4px 4px 4px 4px; 
+    margin-bottom: 4px;
+    margin-top: 28px;
+  margin:4px;   }
+
+  /* Réduire la taille de la police des liens */
+  .card__details a {
+    font-size: 15px; 
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    text-align: justify;
+}
+.card__side--back .card__details {
+  padding:4px;
+
+  width: 100%;
+}
 }

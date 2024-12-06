@@ -513,28 +513,6 @@ ul.skills li.more input:checked + label:hover {
 	background-position-y: 100%;
 	color: var(--b2) !important;
 }
-
-/*********************/
-/*** MEDIA QUERIES ***/
-/*********************/
-
-@media only screen and (max-width: 1024px) {
-	.content { height: 60vh; }
-	.profile-skills {
-		flex-direction: row;
-    flex-wrap: wrap;
-		top: 20px;
-	}
-	.profile-skills > div {
-		width: 47% !important;
-	}
-	.profile-skills > div:nth-child(3) {
-		width: 98% !important;
-		margin-top: 120px;
-	}
-}
-
-
 /* Styling for the div container */
 /* Styling for the div container */
 
@@ -605,59 +583,58 @@ ul.skills li.more input:checked + label:hover {
   .fade-in {
 	opacity: 1;
   }
-  @media only screen and (max-width: 768px) {
-	/* Contenu principal */
-	.content {
-	  width: 95vw;  /* Maximiser la largeur */
-	  height: 100vh;
-	  margin-top: 50px;  /* Ajuster la marge supérieure */
-	  margin-left: 10px;
-	  margin-right: 10px;
-	}
-  
-	/* Compétences */
+  /*********************/
+/*** MEDIA QUERIES ***/
+/*********************/
+
+@media only screen and (max-width: 768px) {
+
 	.profile-skills {
-	  flex-direction: column;  /* Passer en colonne */
-	  margin-top: 5vh;
+		flex-direction: row;
+    flex-wrap: wrap;
+		top: 20px;
 	}
-  
 	.profile-skills > div {
-	  width: 90%;  /* Largeur plus grande pour chaque div */
-	  margin-bottom: 15px;
+		width: 52% !important;
 	}
-  
-	/* Textes dans les compétences */
-	ul.skills li {
-	  font-size: 14px;  /* Réduire la taille du texte */
-	  padding: 15px 20px;
+	.profile-skills > div:nth-child(3) {
+		width: 52% !important;
+
 	}
-  
-	ul.skills:before {
-	  font-size: 22px;
-	}
-  
-	ul.skills li span {
-	  font-size: 12px;
-	}
-  
-	/* Labels des compétences */
-	.profile-skills label {
-	  width: 45px;
-	  height: 45px;
-	  font-size: 18px;
-	}
-  
-	.profile-skills label:before {
-	  border-color: var(--b2);
-	}
-  
-	/* Ajuster les marges et les espacements */
-	.content {
-	  margin-top: 20px;
-	}
-  
-	.profile-skills > div {
-	  margin-right: 0;
-	}
-  }
-  
+}
+  @media screen and (max-width: 768px) {
+    .content {
+        width: 60%;  
+        height: 75vh;  
+      
+    }
+
+    .profile-skills {
+        flex-direction: column;  /* Stack the skills vertically */
+        align-items: center;     /* Center align the items */
+        top: 0;                  /* Remove the offset top position */
+     
+    }
+
+    .profile-skills > div {
+        width: 90%;      /* Make the divs occupy most of the screen width */
+        margin-right: 0; /* Remove the margin-right */
+        margin-bottom: 20px; /* Add space between items */
+    }
+
+    ul.skills {
+        padding: 15px 20px; 
+		list-style:none;
+    }
+
+    ul.skills li {
+        font-size: 14px; /* Adjust font size */
+    }
+.skill{
+	height:75vh;
+}
+
+
+
+
+}
