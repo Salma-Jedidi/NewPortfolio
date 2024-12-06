@@ -74,24 +74,19 @@ body {
 
 /* Contenu */
 .card__content {
-  align-items: flex-start; /* Aligner les éléments en haut */
+  align-items: flex-start;
   padding: 15px;
 }
 
 .card__left {
-
-
   margin-left: 40px;
   margin-bottom: 40px;
   margin-top: 30px; 
   margin-right:40px;
-  flex-direction: column; /* Arrange verticalement les enfants */
- 
+  flex-direction: column; 
 }
 
 .card__right {
- 
-
   margin-left: 40px;
   margin-bottom: 20px;
   margin-right:40px;
@@ -118,9 +113,6 @@ body {
     margin-left: 10px;
   
 }
-
-
-
 .card__link {
   color: #fff;
   background-color: #2e050f;
@@ -156,8 +148,6 @@ body {
   font-size: 16px;
   display: inline-block;
   text-align: center;
-  
-  
   background-position: center;
   transition: background 0.8s, color 0.8s;
   
@@ -170,8 +160,6 @@ font-weight: bold;
 font-size: 16px;
 display: inline-block;
 text-align: center;
-
-
 background-position: center;
 transition: background 0.8s, color 0.8s;
 
@@ -288,7 +276,6 @@ margin-top: 0;
   h2 {
     text-align: justify;
     font-size: 50px;
-  
     float: left;
     color: #350717;
     margin: 30px;
@@ -449,7 +436,7 @@ height: 40px;
   }
   
   .card__description {
-    font-size: 1rem; /* Réduire la taille du texte */
+    font-size: 16px; 
     line-height: 1.4;
   }
   /* Ajuster la taille du bouton d'arrow */
@@ -497,8 +484,7 @@ position: relative;
   nav {
     height: 110px; /* Réduction de la hauteur */
     margin-left: -8px;  
-    width:120%;
-          
+    width:120%;   
     
   }
 
@@ -545,11 +531,7 @@ position: relative;
   .background-image {
     filter: brightness(50%); /* Rend l'image de fond plus sombre */
   }
-  h1.word {
-    position: center;
-    text-align: center;
-    margin-left:20vh;
-  }
+
   .text-overlay {
     position: relative;
     z-index: 10;
@@ -563,6 +545,18 @@ position: relative;
   }
   button {
     margin-left:25vh;
+  }
+  card__left.a{
+    font-size: 16px;
+  }
+  #translateLink{
+    font-size: 16px;
+  }
+  #translateLinkEn{
+    font-size: 16px;
+  }
+  .toggle-technologies{
+    font-size: 16px;
   }
 }
 
