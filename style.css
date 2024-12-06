@@ -760,8 +760,8 @@ button:active{
   }
 
   .skill {
-    width: auto; /* Utilise toute la largeur disponible */
-    height: auto; /* Ajuste automatiquement la hauteur */
+    width: 99%;
+    height: auto; 
     padding: 10px;
     margin: 20px 0;
     margin-left:10px;
