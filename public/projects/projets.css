@@ -337,8 +337,8 @@ height: 40px;
     border-radius: 5px;
     margin: 50px auto; /* Center the skill container itself */
     padding: 10px;
-    width: 120vh; /* Adjust this as needed */
-    height: 92vh; /* Keep aspect ratio */
+    width: 120vh; 
+    height: 100vh; 
     font-size: 20px;
     box-shadow: 0 3px 5px gray;
     box-sizing: border-box;
