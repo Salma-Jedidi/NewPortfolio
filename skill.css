@@ -25,12 +25,12 @@
 }
 
 .content {
-	width: 80vw;
+	width: 100%;
 	height: 100vh;
 	background: #fff0;
     display: flex;
 	justify-content: center;
-    margin-top: 110px;
+    margin-top: 11px;
     margin-left: 20px;
     margin-right: auto;
 
@@ -604,7 +604,7 @@ ul.skills li.more input:checked + label:hover {
 }
   @media screen and (max-width: 768px) {
     .content {
-        width: 60%;  
+        
         height: 75vh;  
       
     }
@@ -613,7 +613,7 @@ ul.skills li.more input:checked + label:hover {
         flex-direction: column;  /* Stack the skills vertically */
         align-items: center;     /* Center align the items */
         top: 0;                  /* Remove the offset top position */
-     
+		width: 60%;
     }
 
     .profile-skills > div {

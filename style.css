@@ -206,9 +206,11 @@ h2 {
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
+
 }
 
 .skill {
+position: relative;
   border: 1px solid gray;
   display: flex;
   align-items: center; /* Center vertically */
@@ -216,7 +218,7 @@ h2 {
   border-radius: 5px;
   margin: 50px auto; /* Center the skill container itself */
   padding: 10px;
-  width: 60%; /* Adjust this as needed */
+  width: 85%; /* Adjust this as needed */
   height: 90vh; /* Keep aspect ratio */
   font-size: 20px;
   box-shadow: 0 3px 10px gray;
