@@ -656,7 +656,7 @@ button:active{
     width: 150%;
   }
   .project-container {
-    width: 190%; /* Utilise toute la largeur disponible */
+    width: 200%; /* Utilise toute la largeur disponible */
     padding: 10px; /* Réduit le padding pour économiser de l'espace */
     margin-top: 20px;
     align-items: center;
@@ -681,7 +681,7 @@ button:active{
     text-align: center;
     padding: 15px 10px; 
     min-height:150px;
-       margin: 0 auto;
+    margin: 0 auto;
     margin-top: 0px;
   }
 
@@ -691,10 +691,11 @@ button:active{
   }
 
   .profile_name {
-    font-size: 14px; /* Réduction de la taille des menus */
+    font-size: 12px; /* Réduction de la taille des menus */
     padding: 5px; /* Espacement plus petit */
     display: block; /* Chaque élément sur une nouvelle ligne */
     margin: 5px auto;
+    
   }
   .introduction {
     font-size: 18px;
@@ -710,7 +711,7 @@ button:active{
     align-items: flex start;
   }
   .contact_info {
-    font-size: 12px; /* Texte plus petit pour mobile */
+    font-size: 10px; /* Texte plus petit pour mobile */
     margin: 5px auto; /* Centré */
     flex-direction: column; /* Empile les éléments verticalement */
     align-items: center; /* Centre horizontalement */
