@@ -592,7 +592,7 @@ ul.skills li.more input:checked + label:hover {
 	.profile-skills {
 		flex-direction: row;
     flex-wrap: wrap;
-		top: 20px;
+	top: 20px;
 	}
 	.profile-skills > div {
 		width: 52% !important;
@@ -606,7 +606,8 @@ ul.skills li.more input:checked + label:hover {
     .content {
         
         height: 75vh;  
-      
+		justify-content: flex-start;
+		
     }
 
     .profile-skills {
@@ -618,7 +619,8 @@ ul.skills li.more input:checked + label:hover {
 
     .profile-skills > div {
         width: 90%;      /* Make the divs occupy most of the screen width */
-        margin-right: 0; /* Remove the margin-right */
+        margin-right: 0;
+		margin-left: 0;
         margin-bottom: 20px; /* Add space between items */
     }
 
