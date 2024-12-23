@@ -182,7 +182,7 @@ nav {
   width: 102%; /* S'étend sur toute la largeur de l'écran */
   background-color: #2e0b0b; /* Couleur de fond, personnalisable */
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);  
-  padding: 2px 0; /* Optionnel : espace intérieur */
+  padding: 4px 0; /* Optionnel : espace intérieur */
  position: relative;
   border-radius: 4px;
 margin-top: 0;
@@ -478,14 +478,16 @@ position: relative;
     justify-content:center;
   }
   .footer {
-    width:120%;
-    margin-left:-8px;
+    width:850px;
+    margin-left: -10px;
+ 
   }
   nav {
-    height: 110px; /* Réduction de la hauteur */
-    margin-left: -8px;  
-    width:120%;   
-    
+    padding: 5px 10px;
+    max-height:150px;
+    width:850px;
+    margin-left: -20px;
+   
   }
 
   #home {
