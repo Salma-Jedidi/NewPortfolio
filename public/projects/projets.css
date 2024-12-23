@@ -468,7 +468,7 @@ position: relative;
   }
   .projects {
     margin-left: 50px;
-    width: 90%; 
+    width: 120%; 
 }
   .project-container {
  
@@ -478,14 +478,14 @@ position: relative;
     justify-content:center;
   }
   .footer {
-    width:850px;
+    width:650px;
     margin-left: -10px;
  
   }
   nav {
     padding: 5px 10px;
-     height:110px;
-    width:850px;
+     max-height:110px;
+    width:650px;
     margin-left: -20px;
    
   }
