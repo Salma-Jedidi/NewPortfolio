@@ -814,11 +814,10 @@ button:active{
   }
 
   .topdiv {
-    display: flex;
-    flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire */
-    justify-content: center; /* Centre les liens */
-    gap: 10px; /* Ajoute un espacement entre les éléments */
-    padding: 10px 0;
+    float: none;
+    margin-top: 10px;
+    font-size: 14px;
+    width:100%;
   }
 
   .flag-icon {
