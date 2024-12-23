@@ -677,7 +677,7 @@ button:active{
   }
   nav {
     padding: 5px 10px;
-    max-height:150px;
+    height:110px;
     width:850px;
     margin-left: -20px;
    
@@ -686,7 +686,7 @@ button:active{
   #home {
     text-align: center;
     padding: 15px 10px; 
-    min-height:170px;
+     height:110px;
     margin: 0 auto;
     margin-top: 0px;
   }
