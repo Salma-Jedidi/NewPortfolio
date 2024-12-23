@@ -37,10 +37,10 @@ nav {
   background-color: #2e0b0b; /* Couleur de fond, personnalisable */
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);  
   padding: 2px 0; /* Optionnel : espace intérieur */
- position: relative;
+  position: relative;
   border-radius: 4px;
-margin-top: 10px;
-  z-index: 1000; /* S'assure que la nav est visible au-dessus d'autres éléments */
+  margin-top:  -10px;
+  z-index: 1000;  
 }
 #home {
   background-color:  #350717;
@@ -50,7 +50,7 @@ margin-top: 10px;
 margin-left: auto;
 margin-right: auto;
   margin-bottom: auto;
-  margin-top: -10px;
+  margin-top: -15px;
  }
 
  .topmenu {
@@ -686,7 +686,7 @@ button:active{
   #home {
     text-align: center;
     padding: 15px 10px; 
-    min-height:150px;
+    min-height:170px;
     margin: 0 auto;
     margin-top: 0px;
   }
