@@ -686,7 +686,7 @@ button:active{
   #home {
     text-align: center;
     padding: 15px 10px; 
-     max-height:110px;
+     height:110px;
     margin: 0 auto;
     margin-top: 0px;
   }
