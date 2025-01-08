@@ -58,80 +58,37 @@
                     <!-- Texte en français -->
                     <div class="card__description" id="frenchText">
                         <p>
-                            Le projet <span style="font-weight: bold; color: #4b0413;">Prédiction des mouvements de
-                                yoga</span> vise à développer un modèle de machine learning capable de prédire les
-                            positions et mouvements effectués pendant une séance de yoga. À travers ce projet, j'ai
-                            appliqué des compétences en <span style="font-weight: bold; color: #4b0413;">traitement des
-                                données de capteurs</span>, en <span style="font-weight: bold; color: #4b0413;">analyse
-                                des mouvements humains</span> et en <span
-                                style="font-weight: bold; color: #4b0413;">construction de modèles prédictifs</span>.<br> En
-                            utilisant des algorithmes comme le <span style="font-weight: bold; color: #4b0413;">Random
-                                Forest</span> et la <span style="font-weight: bold; color: #4b0413;">régression
-                                logistique</span>, j'ai optimisé les performances du modèle pour prédire avec précision
-                            les mouvements. Ce projet a renforcé mes compétences en <span
-                                style="font-weight: bold; color: #4b0413;">data science</span> et en <span
-                                style="font-weight: bold; color: #4b0413;">programmation Python</span>.
+                            Le projet <span style="font-weight: bold; color: #4b0413;">Prédiction des mouvements de yoga</span> se concentre sur le développement d'un modèle d'apprentissage profond capable de prédire les poses et mouvements de yoga à partir de données visuelles ou de capteurs. J'ai appliqué des compétences avancées en <span style="font-weight: bold; color: #4b0413;">traitement de données</span>, en <span style="font-weight: bold; color: #4b0413;">vision par ordinateur</span>, et en <span style="font-weight: bold; color: #4b0413;">conception de réseaux de neurones profonds</span>.<br> 
+                            En utilisant des outils comme <span style="font-weight: bold; color: #4b0413;">TensorFlow</span> et <span style="font-weight: bold; color: #4b0413;">Keras</span>, j'ai développé un modèle basé sur des architectures de réseaux convolutifs (CNN) pour extraire les caractéristiques des images. Ce projet m'a permis de renforcer mes compétences en <span style="font-weight: bold; color: #4b0413;">data science</span>, <span style="font-weight: bold; color: #4b0413;">programmation Python</span>, et en <span style="font-weight: bold; color: #4b0413;">développement d'algorithmes d'apprentissage automatique et profond</span>.
                         </p><br>
                         <div id="technologies-section" style="display: none;">
                         <span style="font-weight: bold; color: #4b0413;">Techniques utilisées:</span>
-                        <div style="margin-top: 25px;margin-left: 40px;">
+                        <div style="margin-top: 25px; margin-left: 40px;">
                             <ol>
-                                <li><strong>Manipulation et nettoyage des données :</strong>
+                                <li><strong>Préparation et nettoyage des données :</strong>
                                     <ul>
-                                        <li><strong>Pandas :</strong> Pour gérer et traiter les données collectées par
-                                            des capteurs de mouvement et des caméras.</li>
-                                        <li><strong>NumPy :</strong> Pour les calculs numériques et la gestion des
-                                            données multidimensionnelles.</li>
+                                        <li><strong>Pandas :</strong> Gestion des données issues de capteurs et vidéos.</li>
+                                        <li><strong>NumPy :</strong> Calculs numériques et manipulation de matrices.</li>
                                     </ul>
                                 </li>
-                                <li><strong>Analyse des mouvements humains :</strong>
+                                <li><strong>Extraction de caractéristiques :</strong>
                                     <ul>
-                                        <li><strong>OpenPose / MediaPipe :</strong> Pour l'extraction des points de
-                                            repère du corps humain à partir de vidéos ou de flux de capteurs.</li>
+                                        <li><strong>MediaPipe :</strong> Pour détecter les points clés des poses humaines.</li>
+                                        <li><strong>CNN :</strong> Pour extraire des caractéristiques complexes à partir des images.</li>
                                     </ul>
                                 </li>
-                                <li><strong>Apprentissage automatique :</strong>
+                                <li><strong>Modélisation et apprentissage :</strong>
                                     <ul>
-                                        <li><strong>Scikit-learn :</strong> Pour implémenter des algorithmes comme
-                                            Random Forest et Régression Logistique, et pour évaluer les modèles de
-                                            prédiction.</li>
-                                        <li><strong>TensorFlow / Keras :</strong> Pour développer des réseaux de
-                                            neurones profonds, si nécessaire pour des prédictions plus complexes.</li>
+                                        <li><strong>TensorFlow/Keras :</strong> Développement et entraînement des modèles CNN.</li>
                                     </ul>
                                 </li>
-                                <li><strong>Environnement de programmation :</strong>
+                                <li><strong>Évaluation des modèles :</strong>
                                     <ul>
-                                        <li><strong>Python :</strong> Le langage de programmation principal pour le
-                                            traitement des données et l'implémentation des modèles.</li>
+                                        <li><strong>Métriques de performance :</strong> Évaluation avec précision, rappel, et F1-score.</li>
                                     </ul>
                                 </li>
-                                <li><strong>Développement et déploiement :</strong>
-                                    <ul>
-                                        <li><strong>Jupyter Notebook :</strong> Pour l'analyse exploratoire des données
-                                            et le développement des modèles dans un environnement interactif.</li>
-                                        <li><strong>VS Code :</strong> Pour écrire et maintenir le code.</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Évaluation et optimisation :</strong>
-                                    <ul>
-                                        <li><strong>Scikit-learn Metrics :</strong> Pour évaluer la performance des
-                                            modèles avec des métriques comme la précision, le rappel et le F1-score.
-                                        </li>
-                                        <li><strong>GridSearchCV :</strong> Pour optimiser les hyperparamètres des
-                                            modèles.</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Sources de données et stockage :</strong>
-                                    <ul>
-                                        <li><strong>Capteurs de mouvement :</strong> Données collectées via des capteurs
-                                            ou des vidéos enregistrées de séances de yoga.</li>
-                                        <li><strong>Sources internes :</strong> Données collectées manuellement ou
-                                            générées pour entraîner le modèle.</li>
-                                        </ul>
-                                    </li>
-                                   
-                                </ol>
-                            </div>
+                            </ol>
+                        </div>
                             <br>
                         <span style="font-weight: bold; color: #4b0413;">Conclusion:</span>
                         <p>Le projet a permis de prédire avec précision les mouvements de yoga en utilisant des données
@@ -147,70 +104,33 @@
                     <!-- Texte en anglais -->
                     <div class="card__description hidden" id="englishText">
                         <p>
-                            The <span style="font-weight: bold; color: #4b0413;">Yoga Movement Prediction</span> project
-                            focuses on developing a machine learning model to predict yoga poses and movements performed
-                            during a session. Through this project, I applied skills in <span
-                                style="font-weight: bold; color: #4b0413;">sensor data processing</span>, <span
-                                style="font-weight: bold; color: #4b0413;">human motion analysis</span>, and <span
-                                style="font-weight: bold; color: #4b0413;">building predictive models</span>.<br> By using
-                            algorithms like <span style="font-weight: bold; color: #4b0413;">Random Forest</span> and
-                            <span style="font-weight: bold; color: #4b0413;">logistic regression</span>, I optimized the
-                            model's performance to accurately predict movements. This project enhanced my skills in
-                            <span style="font-weight: bold; color: #4b0413;">data science</span> and <span
-                                style="font-weight: bold; color: #4b0413;">Python programming</span>.
-                        </p><br>
+                            The <span style="font-weight: bold; color: #4b0413;">Yoga Pose Prediction</span> project focuses on developing a deep learning model capable of predicting yoga poses and movements using visual or sensor data. I applied advanced skills in <span style="font-weight: bold; color: #4b0413;">data processing</span>, <span style="font-weight: bold; color: #4b0413;">computer vision</span>, and <span style="font-weight: bold; color: #4b0413;">deep neural network design</span>.<br>
+                            Leveraging tools such as <span style="font-weight: bold; color: #4b0413;">TensorFlow</span> and <span style="font-weight: bold; color: #4b0413;">Keras</span>, I built a model based on convolutional neural network (CNN) architectures to extract features from images. This project enhanced my skills in <span style="font-weight: bold; color: #4b0413;">data science</span>, <span style="font-weight: bold; color: #4b0413;">Python programming</span>, and <span style="font-weight: bold; color: #4b0413;">developing machine learning and deep learning algorithms</span>.
+                                          </p><br>
                         <div id="technologies-sectionEn" style="display: none;">
                         <span style="font-weight: bold; color: #4b0413;">Techniques used:</span>
                         <div style="margin-top: 25px;margin-left: 40px;">
                             <ol>
-                                <li><strong>Data Manipulation and Cleaning:</strong>
+                                <li><strong>Data Preparation and Cleaning:</strong>
                                     <ul>
-                                        <li><strong>Pandas:</strong> For handling and processing sensor data or video
-                                            data from motion capture systems.</li>
-                                        <li><strong>NumPy:</strong> For numerical calculations and managing
-                                            multidimensional data.</li>
+                                        <li><strong>Pandas:</strong> Handling sensor and video data.</li>
+                                        <li><strong>NumPy:</strong> Numerical computations and matrix manipulation.</li>
                                     </ul>
                                 </li>
-                                <li><strong>Human Motion Analysis:</strong>
+                                <li><strong>Feature Extraction:</strong>
                                     <ul>
-                                        <li><strong>OpenPose / MediaPipe:</strong> For extracting key points from human
-                                            body movements via video or sensor feeds.</li>
+                                        <li><strong>MediaPipe:</strong> Detecting human pose keypoints.</li>
+                                        <li><strong>CNN:</strong> Extracting complex features from images.</li>
                                     </ul>
                                 </li>
-                                <li><strong>Machine Learning:</strong>
+                                <li><strong>Modeling and Training:</strong>
                                     <ul>
-                                        <li><strong>Scikit-learn:</strong> For implementing Random Forest and Logistic
-                                            Regression, and evaluating prediction models.</li>
-                                        <li><strong>TensorFlow / Keras:</strong> For building deep learning models, if
-                                            necessary for complex predictions.</li>
+                                        <li><strong>TensorFlow/Keras:</strong> Building and training CNN models.</li>
                                     </ul>
                                 </li>
-                                <li><strong>Programming Environment:</strong>
+                                <li><strong>Model Evaluation:</strong>
                                     <ul>
-                                        <li><strong>Python:</strong> The main programming language used for data
-                                            processing and model implementation.</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Development and Deployment:</strong>
-                                    <ul>
-                                        <li><strong>Jupyter Notebook:</strong> For exploratory data analysis and model
-                                            development in an interactive environment.</li>
-                                        <li><strong>VS Code:</strong> For writing and maintaining the code.</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Evaluation and Optimization:</strong>
-                                    <ul>
-                                        <li><strong>Scikit-learn Metrics:</strong> For evaluating model performance with
-                                            metrics like accuracy, recall, and F1-score.</li>
-                                        <li><strong>GridSearchCV:</strong> For hyperparameter optimization.</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Data Sources and Storage:</strong>
-                                    <ul>
-                                        <li><strong>Motion sensors:</strong> Data collected via motion sensors or
-                                            recorded video from yoga sessions.</li>
-                                        <li><strong>Internal sources:</strong> Manually collected or generated data to
-                                            train the model.</li>
+                                        <li><strong>Performance Metrics:</strong> Evaluation using accuracy, recall, and F1-score.</li>
                                     </ul>
                                 </li>
                             </ol>
